@@ -45,3 +45,7 @@ If you ever published your AWS secret key by accident to Github you know you mis
 
 - Git secrets needs to be installed on your local machine (you need to do this yourself once)
 - In order to be effective, a pre-commit-hook needs to be created. Depending on your programming language and toolchain, there might be mechanisms how to distribute the hook. This repository contains a working sample for Node.js (NPM)
+
+## References
+- [What to Do If You Inadvertently Expose an AWS Access Key](https://aws.amazon.com/de/blogs/security/what-to-do-if-you-inadvertently-expose-an-aws-access-key/)
+- [A Safer Way to Distribute AWS Credentials to EC2](https://aws.amazon.com/de/blogs/security/a-safer-way-to-distribute-aws-credentials-to-ec2/)
