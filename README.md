@@ -1,9 +1,19 @@
 # Never publish your secrets to git - anymore
 
-## [tl:dr] 
+## [tl:dr]
+
+**Prerequisites:** [git-secrets](https://github.com/awslabs/git-secrets) must be installed in your machine.
+
+Checkout and build this node.js project: git-secrets will be set up automatically and prevent you to commit AWS secrets.
 
 ```
-npm i && echo 'AWS_SECRET_KEY = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEZ' >foo.txt && git add foo.txt && git commit -m "publish aws key"
+git clone https://github.com/assistify/sample-git-secrets.git
+npm i
+
+echo 'AWS_SECRET_KEY = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEZ' >foo.txt
+
+git add foo.txt
+git commit -m "publish aws key"
 ```
 
 // output
@@ -20,6 +30,12 @@ Possible mitigations:
 - List your configured allowed patterns in .gitallowed at repository's root directory
 - Use --no-verify if this is a one-time false positive
 ```
+
+## With this solution it is possible to ensure that
+- you cannot commit if git-secrets is not installed,
+- git-secrets is automatically activated after building the project,
+- the patterns for AWS secrets are added and recognized by default, and
+- the patterns can easily be extended by editing the file file
 
 ## What git secrets is about
 
