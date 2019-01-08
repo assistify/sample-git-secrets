@@ -9,9 +9,7 @@ Checkout and build this node.js project: git-secrets will be set up automaticall
 ```
 git clone https://github.com/assistify/sample-git-secrets.git
 npm i
-
 echo 'AWS_SECRET_KEY = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEZ' >foo.txt
-
 git add foo.txt
 git commit -m "publish aws key"
 ```
