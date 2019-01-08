@@ -33,7 +33,7 @@ Possible mitigations:
 - you cannot commit if git-secrets is not installed,
 - git-secrets is automatically activated after building the project,
 - the patterns for AWS secrets are added and recognized by default, and
-- the patterns can easily be extended by editing the file file
+- the patterns can easily be extended by editing the [patterns file](https://github.com/assistify/sample-git-secrets/blob/master/.git-secrets/patterns)
 
 ## What git secrets is about
 
