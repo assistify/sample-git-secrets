@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pre-commit": 'sh .git-secrets/bootstrap.sh && git secrets --pre_commit_hook -- "$@"'
+  }
+}
